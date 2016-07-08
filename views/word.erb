@@ -1,0 +1,10 @@
+<h3>Here are all the definitions for this <em>werd</em></h3>
+
+<ul>
+  <% @word.definitions().each do |definition| %>
+  <li><a href="/definition/<%= car.id() %>"><%= definition.make() %></a></li>
+  <% end %>
+</ul>
+
+<a href="/words/<%= @word.id %>/definitions/new">Add a new definition</a>
+<a href="/">Return to Main Page</a>
