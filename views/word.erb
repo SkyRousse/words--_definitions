@@ -2,12 +2,14 @@
 
 <ul>
   <% @word.definitions().each do |definition| %>
-  <li><a href="/definition/<%= car.id() %>"><%= definition.make() %></a></li>
+  <li><a href="/definition/<%= definition.id() %>"><%= definition.name() %></a></li>
   <% end %>
 </ul>
 <div class="flex-item">
+  <h3>Don't see anything you're interested in?</h3>
   <a class="home-btn" href="/words/<%= @word.id %>/definitions/new">Add a new definition</a>
 </div>
 <div class="flex-item">
-  <a class="home-btn" href="/">Return to Main Page</a>
+  <h3>Homesick?</h3>
+  <a class="home-btn" href="/">Return to Home Page</a>
 </div>
