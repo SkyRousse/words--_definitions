@@ -45,7 +45,7 @@ describe(Definition) do
 
     describe('.find') do
       it('returns a definition by its id number') do
-        automagically = Definition.new("Automatically, but in a way that, for some reason (typically because it is too complicated, or too ugly, or perhaps even too trivial), the speaker doesn't feel like explaining to you.")
+        automagically = Definition.new("Something that happens automatically,  but in a way that, for some reason (typically because it is too complicated, or too ugly, or perhaps even too trivial), the speaker doesn't feel like explaining to you.")
         automagically.save()
         snoping = Definition.new("Verifying something you've seen on the internet on Snopes.com")
         snoping.save()
