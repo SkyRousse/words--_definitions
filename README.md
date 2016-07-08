@@ -27,7 +27,7 @@
 
 * Download from github: https://github.com/SkyRousse/words--_definitions.git
 * Open in a web browser
-* Or visit site online at:
+* Or visit site online at: https://ancient-bayou-30604.herokuapp.com/ 
 
 ## Known Bugs
 No known bugs at this time.
