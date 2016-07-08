@@ -2,6 +2,9 @@ require('definition')
 require('rspec')
 
 describe(Definition) do
+  before() do
+    Definition.clear()
+  end
 
     describe('#description') do
       it('adds a description to the definition') do
@@ -23,5 +26,6 @@ describe(Definition) do
         expect(Definition.all()).to(eq([]))
       end
     end
+
 
 end
