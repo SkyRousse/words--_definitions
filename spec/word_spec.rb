@@ -68,7 +68,7 @@ describe(Word) do
       automagically_test_word = Word.new("Automagically")
       automagically_definition = Definition.new("Something that happens automatically, but in a way that, for some reason (typically because it is too complicated, or too ugly, or perhaps even too trivial), the speaker doesn't feel like explaining to you.")
       automagically_test_word.add_definition(automagically_definition)
-      expec(automagically_test_word.definitions()).to(eq([automagically_definition]))
+      expect(automagically_test_word.definitions()).to(eq([automagically_definition]))
     end
   end
 
