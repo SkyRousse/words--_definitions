@@ -1,7 +1,9 @@
-<h1><em>Werds</em></h1>
+<h1 class="flex-header"><em>Werds</em></h1>
 
-<ul>
-  <% @words.each() do |word| %>
-  <li><a href="/words/<%= word.id() %>"><%= word.name() %></a></li>
-  <% end %>
-</ul>
+<div class="flex-item">
+  <ul>
+    <% @words.each() do |word| %>
+    <li><a href="/words/<%= word.id() %>"><%= word.name() %></a></li>
+    <% end %>
+  </ul>
+</div>

@@ -39,7 +39,7 @@ get('/words/:id') do
   erb(:word)
 end
 
-get('/dealerships/:id/definitions/new') do
+get('/word/:id/definitions/new') do
   @word = Word.find(params.fetch('id').to_i())
   erb(:word_definitions_form)
 end
