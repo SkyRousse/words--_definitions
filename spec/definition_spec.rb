@@ -13,6 +13,12 @@ describe(Definition) do
       end
     end
 
+    describe('.all') do
+      it('starts out as an empty array') do
+        expect(Definition.all()).to(eq([]))
+      end
+    end
+
     describe('#save') do
       it('adds an object instance of Definition class to the definitions array') do
         shypod = Definition.new('When one is hesitant about sharing the contents of his or her iPod.')
@@ -21,8 +27,10 @@ describe(Definition) do
       end
     end
 
-    describe('.all') do
-      it('starts out as an empty array') do
+    describe('.clear') do
+      it('empties out all the saved definitions') do
+        cheapster = Definition.new('Someone who is cheap.').save()
+        Definition.clear()
         expect(Definition.all()).to(eq([]))
       end
     end
@@ -44,6 +52,5 @@ describe(Definition) do
         expect(Definition.find(snoping.id())).to(eq(snoping))
       end
     end
-
 
 end
