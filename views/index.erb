@@ -1,9 +1,14 @@
 <div class="flex-item">
-  <h3>Find your new favs</h3>
-  <a class="home-btn" href='/words'><em>Werd</em> List</a>
+  <h3><em>Werds</em> in Yur Bank</h3>
+  <div class="home-box" href='/words/new'> = </div>
+  <ul>
+    <% @words.each() do |word| %>
+      <li><a href="/words/<%= word.id() %>"><%= word.name() %></a></li>
+    <% end %>
+  </ul>
 </div>
 <div class="flex-item">
-  <h3>Add what's missing</h3>
+  <h3>Dissapointed with the current list?</h3>
   <a class="home-btn" href='/words/new'>Add New <em>Werd</em></a>
 </div>
 <h1 class="flex-header">Welcome to Dissapointing Slang</h1>

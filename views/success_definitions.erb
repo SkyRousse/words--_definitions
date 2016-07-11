@@ -1,7 +1,8 @@
 <div class="flex-item">
-  <a href= "/definitions"><h3>See the List</h3></a>
+  <a href= "/definitions"><h3>Definition: <br> <%= @definition_input %></h3></a>
 </div>
 <div class="flex-item">
-  <a href="/definitions/new"><h3>Add Another</h3></a>
+  <a href="/words/<%= @word.id() %>/definitions/new"><h3>Add Another</h3></a>
 </div>
-<h1 class="flex-header">Boom! Your definition Was added to the <em>Werd</em></h1>
+<h1 class="flex-header">Boom! Your definition Was added to <em><%= @word.name() %></em></h1>
+<a class="home-btn-small" href= "/">Visit tha Bank</a>

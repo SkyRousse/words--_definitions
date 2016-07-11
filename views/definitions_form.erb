@@ -1,8 +1,9 @@
-<h1>Add a definition:</h1>
-
-<form class="add-definition-form" action="/definitions" method="post">
-    <label for="make">Definition:</label>
-    <input type="text" id="description" name="description">
-
-    <button type="submit">Add Definition</button>
-</form>
+<h1 class="flex-header">Add a Definition</h1>
+<div class="flex-header">
+  <h3>Define Your Djanky <em>Werd:</em> <%= @word.name() %></h3>
+  <form class="add-definition-form" action="/definitions" method="post">
+    <input id='word_id' name='word_id' type='hidden' value='<%= @word.id() %>'>
+    <input type="text" id="definition" name="definition">
+    <button class="home-btn-small" type="submit">Add Definition</button>
+  </form>
+</div>
